@@ -7,6 +7,7 @@
     <style>
         body{
             background: #f0f2f5;
+            margin: 0;
         }
         .main{
             background: white;
@@ -113,35 +114,58 @@
             font-weight: bold;
             color: #1878f2;
         }
-
+        .moreLinks{
+            position: absolute;
+            margin: 600px 0;
+            border-radius: 0;
+            color: grey;
+        }
+        .lang{
+            width: 100%;
+            height: 30px;
+            margin: 0 400px 0 500px;
+        }
+        .allLinks{
+            margin: 0 150px 0 500px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
     </style>
 </head>
 <body>
-
-    <div class="main">
-        <input type="text" placeholder="Номер телефона, имя пользователя или эл. адрес"><br>
-        <input type="password" placeholder="Пароль"><br>
-        <button type="submit">Войти</button>
-        <p class="ili">ИЛИ</p>
-        <div class="facebook">
-            <img src="facebook.png" width="18px" alt="">
-            <a href="" class="singFacebook">Войти через Facebook</a><br>
-            <a href="" class="forgetpass">Забыли пароль?</a>
+    <div class="headMain">
+        <div class="main">
+            <input type="text" placeholder="Номер телефона, имя пользователя или эл. адрес"><br>
+            <input type="password" placeholder="Пароль"><br>
+            <button type="submit">Войти</button>
+            <p class="ili">ИЛИ</p>
+            <div class="facebook">
+                <img src="facebook.png" width="18px" alt="">
+                <a href="" class="singFacebook">Войти через Facebook</a><br>
+                <a href="" class="forgetpass">Забыли пароль?</a>
+            </div>
         </div>
+
+        <img class="textinsta" src="textinsta.png" alt="textinsta">
+
+        <div class="signIn">
+            <p class="textsecfoorm">У вас еще нет аккаунта <a class="signInLink" href="">Зарегестрироваться</a></p>
+        </div>
+        <form action="" class="thirdform">
+            <p class="defolttext">Установите приложение.</p>
+        </form>
+
+        <a href=""><img class="appstore" src="appstore.png" alt="appstore"></a>
+        <a href=""></a><img class="googleplay" src="googleplay.png" alt="googleplay"></a>
+        <img class="instaphone" src="instaphone.jpg" alt="instaphone">
     </div>
-
-    <img class="textinsta" src="textinsta.png" alt="textinsta">
-
-    <div class="signIn">
-        <p class="textsecfoorm">У вас еще нет аккаунта <a class="signInLink" href="">Зарегестрироваться</a></p>
+    
+    <div class="moreLinks">
+        <div class="allLinks">Информация Блог Вакансии Помощь API Конфиденциальность Условия Популярные аккаунты Хэштеги Места
+            Красота Танцы и выступления Фитнес Еда и напитки Дом и сад Музыка Изобразительное искусство</div>
+        <div class="lang">Русский        © Instagram от Facebook, 2021</div>
     </div>
-    <form action="" class="thirdform">
-        <p class="defolttext">Установите приложение.</p>
-    </form>
-
-    <a href=""><img class="appstore" src="appstore.png" alt="appstore"></a>
-    <a href=""></a><img class="googleplay" src="googleplay.png" alt="googleplay"></a>
-    <img class="instaphone" src="instaphone.jpg" alt="instaphone">
-
 </body>
 </html>
