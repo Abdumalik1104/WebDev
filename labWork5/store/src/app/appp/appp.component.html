@@ -1,0 +1,9 @@
+<h1>Categories:</h1>
+<div class="categories">
+  <button (click)="filterProductsByCategory('men\'s clothing')">men's clothing</button>
+  <button (click)="filterProductsByCategory('women\'s clothing')">women's clothing</button>
+  <button (click)="filterProductsByCategory('jewelery')">jewelery</button>
+  <button (click)="filterProductsByCategory('electronics')">electronics</button>
+</div>
+
+<app-product-list [products]="products" [productsLinks]="productsLinks" [selectedCategory]="selectedCategory"></app-product-list>

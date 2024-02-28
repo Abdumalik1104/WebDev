@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="card">
+        <a [href]="productsLinks[product.id]">
+        <div class="image" [style.background-image]="'url(' + product.image + ')'"></div>
+        <p class="title">{{ product.title.substring(0, 15) }}...</p>
+        <p class="description">{{ product.description.substring(0, 50) }}...</p>
+        <p class="price">
+            <span class="rating">{{ product.rating.rate }}</span>
+            <span>{{ product.price }} KZT</span>
+        </p>
+        <p class="likes">Likes: {{ product.likes }}</p>
+        </a>
+        <button class="btn" (click)="likeProduct()">Like</button>
+        <button class="btn" (click)="removeProduct()">Remove</button>
+        <button class="btn" (click)="redirectToWhatsApp(product.id)">Share</button>
+    </div>    
+</div>
+
+  
